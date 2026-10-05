@@ -1,0 +1,162 @@
+{
+  "selected_model": "Logistic Regression",
+  "best_cv_model": "Logistic Regression",
+  "threshold": 0.26,
+  "threshold_max_mcc": 0.38,
+  "target_recall": 0.8,
+  "cross_validation": {
+    "Logistic Regression": {
+      "params": {
+        "C": 3.0
+      },
+      "cv_pr_auc": 0.673161495441306,
+      "cv_pr_auc_std": 0.01732576692371149,
+      "cv_pr_auc_se": 0.00774831852074726,
+      "cv_roc_auc": 0.8503174492094063,
+      "cv_roc_auc_std": 0.011452559111118294,
+      "oof_threshold": 0.26,
+      "oof_at_target_recall": {
+        "accuracy": 0.7504437344692936,
+        "precision": 0.5192224622030237,
+        "recall": 0.8040133779264214,
+        "f1": 0.6309711286089239,
+        "mcc": 0.48020923061489035
+      }
+    },
+    "Decision Tree": {
+      "params": {
+        "max_depth": 8,
+        "min_samples_leaf": 50
+      },
+      "cv_pr_auc": 0.6298631943860554,
+      "cv_pr_auc_std": 0.031305037976496856,
+      "cv_pr_auc_se": 0.014000038590731886,
+      "cv_roc_auc": 0.829329867391575,
+      "cv_roc_auc_std": 0.012958885639606215,
+      "oof_threshold": 0.25,
+      "oof_at_target_recall": {
+        "accuracy": 0.7346467873624423,
+        "precision": 0.5,
+        "recall": 0.8033444816053512,
+        "f1": 0.6163715678727226,
+        "mcc": 0.45815662521543504
+      }
+    },
+    "SVM (RBF)": {
+      "params": {
+        "C": 0.3
+      },
+      "cv_pr_auc": 0.6450231820571837,
+      "cv_pr_auc_std": 0.0189775851828028,
+      "cv_pr_auc_se": 0.008487034103507965,
+      "cv_roc_auc": 0.8029377786225481,
+      "cv_roc_auc_std": 0.016993655606178402,
+      "oof_threshold": 0.15,
+      "oof_at_target_recall": {
+        "accuracy": 0.6817536386226483,
+        "precision": 0.44667143879742305,
+        "recall": 0.8347826086956521,
+        "f1": 0.5819538353928655,
+        "mcc": 0.40732777572168033
+      }
+    },
+    "Random Forest": {
+      "params": {
+        "max_depth": 10,
+        "min_samples_leaf": 5
+      },
+      "cv_pr_auc": 0.664084373543424,
+      "cv_pr_auc_std": 0.021760560869861896,
+      "cv_pr_auc_se": 0.00973161866670663,
+      "cv_roc_auc": 0.8462439976422234,
+      "cv_roc_auc_std": 0.010604530028499922,
+      "oof_threshold": 0.26,
+      "oof_at_target_recall": {
+        "accuracy": 0.7484913028044018,
+        "precision": 0.5166382252559727,
+        "recall": 0.8100334448160535,
+        "f1": 0.6308934618390206,
+        "mcc": 0.48039223020873834
+      }
+    },
+    "Gradient Boosting": {
+      "params": {
+        "learning_rate": 0.05,
+        "max_iter": 400,
+        "max_leaf_nodes": 4
+      },
+      "cv_pr_auc": 0.6665409420281232,
+      "cv_pr_auc_std": 0.022282582958240784,
+      "cv_pr_auc_se": 0.00996507404178095,
+      "cv_roc_auc": 0.8467083736841076,
+      "cv_roc_auc_std": 0.011713575892415692,
+      "oof_threshold": 0.27,
+      "oof_at_target_recall": {
+        "accuracy": 0.7539936102236422,
+        "precision": 0.5237887385421214,
+        "recall": 0.802675585284281,
+        "f1": 0.6339144215530903,
+        "mcc": 0.4845572581747713
+      }
+    }
+  },
+  "test": {
+    "roc_auc": 0.8473016611124028,
+    "pr_auc": 0.6639771966569383,
+    "ci95": {
+      "roc_auc": [
+        0.8251955904741931,
+        0.8677827918942509
+      ],
+      "pr_auc": [
+        0.6136489244514669,
+        0.7134729946755485
+      ]
+    },
+    "brier": 0.13483827791164082,
+    "brier_baseline": 0.1949799619120813,
+    "at_0.5": {
+      "accuracy": 0.8041163946061036,
+      "precision": 0.6644295302013423,
+      "recall": 0.5294117647058824,
+      "f1": 0.5892857142857143,
+      "mcc": 0.46797370481209594
+    },
+    "at_threshold": {
+      "accuracy": 0.7359829666430092,
+      "precision": 0.5017064846416383,
+      "recall": 0.786096256684492,
+      "f1": 0.6125,
+      "mcc": 0.45150493104657347
+    },
+    "at_max_mcc_threshold": {
+      "accuracy": 0.7806955287437899,
+      "precision": 0.5740318906605922,
+      "recall": 0.6737967914438503,
+      "f1": 0.6199261992619927,
+      "mcc": 0.47015479907107094
+    },
+    "all_models": {
+      "Logistic Regression": {
+        "roc_auc": 0.8473016611124028,
+        "pr_auc": 0.6639771966569383
+      },
+      "Decision Tree": {
+        "roc_auc": 0.8380105401844532,
+        "pr_auc": 0.6375453394734557
+      },
+      "SVM (RBF)": {
+        "roc_auc": 0.7949133276499005,
+        "pr_auc": 0.621176266639375
+      },
+      "Random Forest": {
+        "roc_auc": 0.8455604639747862,
+        "pr_auc": 0.6558444513124613
+      },
+      "Gradient Boosting": {
+        "roc_auc": 0.8420251104394327,
+        "pr_auc": 0.6583184260764446
+      }
+    }
+  }
+}

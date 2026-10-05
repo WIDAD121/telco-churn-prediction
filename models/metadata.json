@@ -1,0 +1,15 @@
+{
+  "model": "Logistic Regression",
+  "params": {
+    "C": 3.0
+  },
+  "threshold": 0.26,
+  "target_recall": 0.8,
+  "test_roc_auc": 0.8473,
+  "test_pr_auc": 0.664,
+  "test_recall_at_threshold": 0.7861,
+  "test_precision_at_threshold": 0.5017,
+  "n_train": 5634,
+  "sklearn_version": "1.9.1",
+  "python_version": "3.14.4"
+}

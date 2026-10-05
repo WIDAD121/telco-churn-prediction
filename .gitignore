@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Secrets and local settings: never commit tokens or keys
+.env
+.streamlit/secrets.toml
+RunApp.ipynb
+
+# Old artifacts from the Colab version
+*.pkl
+nohup.out
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
